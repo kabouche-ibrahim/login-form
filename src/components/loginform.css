@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+input, button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.App {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #53565A;
+}
+
+.form-inner {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.form-inner h2 {
+    color: #888;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.form-groop {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.form-inner .form-groop label {
+    display: block;
+    color: #666;
+    font-size:15px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.form-inner .form-groop:focus-within label {
+    color: #FE4880;
+}
+
+.form-inner .form-groop input {
+    display: block;
+    width: 100%;
+    padding: 10px, 15px;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.form-inner .form-groop input:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-inner input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient( to right, #FFCE00 50%, #FFCE00 50%, #FF4880);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-inner input[type="submit"]:hover {
+    background-position: 100% 0%;
+}
