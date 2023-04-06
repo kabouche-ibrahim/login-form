@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./loginform.css";
+import logo from "./cnr.png";
+import passwordIcon from "./password.png";
+import userIcon from "./user.png"
 
 const LoginForm = () => {
 
@@ -36,18 +39,15 @@ const LoginForm = () => {
 
     return (
         <form className="form-inner" onSubmit={handleSubmit}>
-                {Object.keys(currentUser).length !== 0 && <p>{currentUser.username}</p> }
-                <h2>Login</h2>
+                <h2><img src={logo} width={60} height={50} /></h2>
                 <div className="form-groop">
-                    <label htmlFor="username">username:</label>
-                    <input type="text" id="usrname"/>
+                    <input type="text" id="usrname" placeholder="Nom d'utilisateur"/>
                 </div>
                 <button></button>
                 <div className="form-groop">
-                    <label htmlFor="password">password:</label>
-                    <input type="password" id="pwd"/>
+                    <input type="password" id="pwd" placeholder="Mot de passe"/>
                 </div>
-                <button type="submit">LOGIN</button>
+                <button type="submit">Connexion</button>
         </form>
     )
 }

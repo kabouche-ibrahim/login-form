@@ -1,86 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 input, button {
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .App {
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #53565A;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #bbdae2;
 }
 
 .form-inner {
-    position: relative;
-    display: block;
-    background-color: #FFF;
-    padding: 30px;
-    border-radius: 10px;
-    
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 30px;
+  height: 400px;
+  box-shadow: 0px 10px 20px rgba(11, 11, 209, 0.5);
+  
 }
 
 .form-inner h2 {
-    color: #888;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 30px;
+  color: rgba(216, 230, 238, 1);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .form-groop {
-    display: block;
-    width: 300px;
-    margin-bottom: 15px;
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
 }
 
 .form-inner .form-groop label {
-    display: block;
-    color: #666;
-    font-size:15px;
-    margin-bottom: 20px;
-    transition: 0.4s;
+  display: block;
+  color: #666;
+  font-size:15px;
+  margin-bottom: 20px;
+  transition: 0.4s;
 }
 
 .form-inner .form-groop:focus-within label {
-    color: #FE4880;
+  color: #FE4880;
 }
 
 .form-inner .form-groop input {
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #F8F8F8;
-    border-radius: 8px;
-    transition: 0.4s;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F8F8F8;
+  transition: 0.4s;
 }
 
 .form-inner .form-groop input:focus {
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .form-inner button[type="submit"] {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-image: linear-gradient( to right, #FFCE00 50%, #FFCE00 50%, #FF4880);
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  background-image: linear-gradient( to right, #3641d7 50%, #2d4add 50%, #0a1c81);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 300px;
+  margin-top: 80px;
 }
 
 .form-inner button[type="submit"]:hover {
-    background-position: 100% 0%;
+  background-position: 100% 0%;
 }
+
+.form-inner .form-group input[type="text"] {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 30px;
+}
+
+
